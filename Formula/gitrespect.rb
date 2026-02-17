@@ -11,7 +11,7 @@ class Gitrespect < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/juangracia/gitrespect/releases/download/v0.3.1/gitrespect-darwin-amd64.tar.gz"
-      sha256 "937ecaab96c356ae3c2cec3bc9f75bcac387498e0dd02925c6f836c3f03faf20"
+      sha256 "02cac10fc16ce84d65f21b22482702f4d71084dfce540d4c12f962c498b4f690"
 
       def install
         bin.install "gitrespect"
@@ -19,7 +19,7 @@ class Gitrespect < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/juangracia/gitrespect/releases/download/v0.3.1/gitrespect-darwin-arm64.tar.gz"
-      sha256 "1e2dc412ccf5a5a4a866332217ab07f8c800118d1889d611a930c0083a7615b2"
+      sha256 "7295461786704c6cb0dd4b52276bf5a642b275763e32703fbf34c6ab29dcb7d6"
 
       def install
         bin.install "gitrespect"
@@ -30,14 +30,14 @@ class Gitrespect < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/juangracia/gitrespect/releases/download/v0.3.1/gitrespect-linux-amd64.tar.gz"
-      sha256 "e304c45c7122f25b131cf421ecd6d5dcc2034f718f35f90e4b96317e4af38e50"
+      sha256 "4836cade04d2aecaefa01a269cd8c5d2ece80fb899b0012759788c04c3bd72a0"
       def install
         bin.install "gitrespect"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/juangracia/gitrespect/releases/download/v0.3.1/gitrespect-linux-arm64.tar.gz"
-      sha256 "53ee423f80bb88e7ce197bbf576cf558d06a9e42af90200b5f1b5be68a5173bf"
+      sha256 "d2149c46ec05fb5ba5fad0b44c09171411dd04543cd9effdea0fb95bca09cb39"
       def install
         bin.install "gitrespect"
       end
