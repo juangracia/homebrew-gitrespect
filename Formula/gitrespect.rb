@@ -5,21 +5,21 @@
 class Gitrespect < Formula
   desc "Respect your git work with real metrics. Measure AI productivity impact."
   homepage "https://github.com/juangracia/gitrespect"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/juangracia/gitrespect/releases/download/v0.4.0/gitrespect-darwin-amd64.tar.gz"
-      sha256 "b53f7ddde49f5baea708b501a839c991fa1acece2db73142794fa4b9307d66dd"
+      url "https://github.com/juangracia/gitrespect/releases/download/v0.4.1/gitrespect-darwin-amd64.tar.gz"
+      sha256 "6bc6ca800dbba2667802de10835f1f686409b489a3e066f0501bb08ad69307d1"
 
       define_method(:install) do
         bin.install "gitrespect"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/juangracia/gitrespect/releases/download/v0.4.0/gitrespect-darwin-arm64.tar.gz"
-      sha256 "64b14e8ec445256a4be6e96c76a491e93201c54f6a05a5b2572f1830eec556ec"
+      url "https://github.com/juangracia/gitrespect/releases/download/v0.4.1/gitrespect-darwin-arm64.tar.gz"
+      sha256 "1b8064c81e45fdc4d5ba8abb5e9878853f877596d73386be9e5df93f60b7c1e1"
 
       define_method(:install) do
         bin.install "gitrespect"
@@ -29,15 +29,15 @@ class Gitrespect < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juangracia/gitrespect/releases/download/v0.4.0/gitrespect-linux-amd64.tar.gz"
-      sha256 "663ca384702fee4120f708ef23b078fc239092d12db9ee6acf1e3159cd046a72"
+      url "https://github.com/juangracia/gitrespect/releases/download/v0.4.1/gitrespect-linux-amd64.tar.gz"
+      sha256 "e4e88d43f5e08a65087972857159764d84d589a922c175a28171d79241a9afb2"
       define_method(:install) do
         bin.install "gitrespect"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/juangracia/gitrespect/releases/download/v0.4.0/gitrespect-linux-arm64.tar.gz"
-      sha256 "81beba9f22469c0875df6317be2c95eaf126d4a6fa23e5652fa61f3db82660cd"
+      url "https://github.com/juangracia/gitrespect/releases/download/v0.4.1/gitrespect-linux-arm64.tar.gz"
+      sha256 "daa73195f45dbf448670cbb8af4e0103418828534faf34298b06a483b7e55d60"
       define_method(:install) do
         bin.install "gitrespect"
       end
